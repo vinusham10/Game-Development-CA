@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.firstpage{
+    background-image: url("assets/hop\ over\ second\ page.jpg");
+    background-size: 100%;
+}
+.secondpage{
+    background-image: url("assets/pagesss.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.thirdpage{
+    background-image: url("assets/hop\ over\ second\ page.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.fourthpage{
+    background-image: url("assets/pagesss.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.heading{
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 15px;
+    margin-bottom: 90px;
+}
+body{
+    font-family: 'Playpen Sans', cursive;
+}
+#name{
+    margin-left: 40%;
+    height: 25px;
+    width: 290px;
+    background-color: rgba(185, 212, 229, 0.736);
+    border-color: aliceblue;
+    margin-bottom: 30px;
+}
+ #Username{
+    margin-left: 40%;
+    height: 25px;
+    width: 290px;
+    background-color: rgba(185, 212, 229, 0.736);
+    border-color: aliceblue;
+    margin-bottom: 30px;
+}
+#name1{
+    margin-left: 40%;
+    font-size: 23px; 
+}
+#startbutton{
+    text-align: center;
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Playpen Sans', cursive;
+    height: 40px;
+}
+button{
+    margin-left: 40%;
+    margin-top: 9%;
+    background-color: rgba(211, 231, 249, 0.603);
+    border-radius: 6px;
+    transition: transform 0.1s ease-in-out;
+}
+.Instructions{
+    width: 1000px;
+    font-size: 23px;
+    margin-left: 16%;
+    margin-top: 11%;
+    line-height: 37px;
+}
+#beginbutton{
+    text-align: center;
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Playpen Sans', cursive;
+    height: 40px;
+    padding-top: 0px;
+    background-color: rgba(217, 173, 255, 0.726);
+}
+.gameover{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 66px;
+}
+#score-box{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 38px;
+}
+.better{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 12%;
+}
+#playagain{
+    text-align: center;
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Playpen Sans', cursive;
+    height: 40px;
+    padding-top: 0px;
+    background-color: rgba(217, 173, 255, 0.726);
+
+}
+button:active{
+    transform: scale(1.1);
+}
+.floor{
+    width: 100%;
+    height: 15px;
+    background-color: black;
+    margin-top: 0px;
+}
+.chicken{
+    height: 90px;
+    margin-left: 92%;
+    margin-top: 24%;
+}
+.dogg{
+    height: 50px;
+}
+#smallscore{
+    margin-left: 80%;
+    font-size: 25px;
+}
+
+.username{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+#dog{
+    position: relative;
+    left: 160px;
+}
+#block{
+    background-color: black;
+    width: 25px;
+    height: 50px;
+    position: relative;
+    top: 500px;
+    left: -4%;
+    animation: block 3s infinite linear;
+}
+@keyframes block{
+    0%{left:1400px }
+    100%{left: -140px;}
+}
+@keyframes jump {
+    0% { top: -140px }
+    
+    25% { top: -120px}
+    
+    50% { top: -100px }
+   
+    75% { top: -120px}
+ 
+    100% { top: -140px}
+}
+
+.animate {
+    animation: jump 0.7s;
+}
+
+@media screen and (max-width:500px) { 
+    .secondpage{
+       background-size: 400%; 
+    }
+    p{
+        font-size: 20px;
+    }
+    .Instructions{
+        font-size: 15px;
+        width: 200px;
+    }
+    button{
+        margin-left: 15%;
+        height: 30px;
+        width: 230px;
+    }
+    #beginbutton{
+        margin-left: 0%;
+        height: 27px;
+        width: 227px;
+        font-size: 17px;}
+    #playagain{
+        margin-left: 0%;
+        height: 27px;
+        width: 227px;
+        font-size: 17px;} 
+    .firstpage{
+        background-size: 400%; 
+        }
+    .thirdpage{
+        background-size: 400%; 
+    }
+    .fourthpage{
+        background-size: 400%; 
+    }
+    .username{
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    #smallscore{
+        font-size: 13px;
+    }
+    #block{
+        top: 450px;
+    }
+    .floor{
+        margin-top: 20px;
+    }
+    #dog{
+        top: 20px;
+        left: 5px;
+    }
+    .chicken{
+        height: 40px;
+        margin-left: 275px;
+        margin-top: 330px;
+    }
+}
+
+
+    
+
